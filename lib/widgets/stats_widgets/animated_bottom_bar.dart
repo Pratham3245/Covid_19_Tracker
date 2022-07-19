@@ -132,7 +132,7 @@ class _AnimatedBarItemState extends State<AnimatedBarItem>
             AnimatedSize(
               curve: Curves.easeInOut,
               duration: widget.animationDuration,
-              vsync: this,
+              async: this,
               child: LimitedBox(
                 maxWidth: 70,
                 child: AutoSizeText(
